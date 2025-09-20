@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Risks Shoes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.jpg" alt="Logo de mi empresa" width="80" height="80"> Risks Shoes</div>
+    <nav>
+     <!--Este es el home --> 
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#">Categorías</a>
+          <ul class="submenu">
+            <li><a href="skate.html">Skate</a></li>
+            <li><a href="urbanas.html">Urbanas</a></li>
+            <li><a href="edicion-limitada.html">Edición limitada</a></li>
+          </ul>
+        </li>
+        <li><a href="#contacto">Contacto</a></li>
+    
+        <li><a href="carrito.html" id="cartBtn">🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Este es el encabeza--> 
+  <section id="home" class="hero">
+    <h1>Estilo que desafía lo común</h1>
+    <p>Zapatillas urbanas y skate hechas en Colombia</p>
+  </section>
+
+<section>
+  <h2 class="centrado">Categorías</h2> <br>
+</section>
+<!--Estos son los productos-->
+  <div id= "hero-images" >  
+    <div class="categoria-lista">
+  <div class="categoria-item">
+    <a href="skate.html">
+      <img src="imagen1.png" alt="Imagen 1" class="img" />
+    </a>
+    <h3 class="centrado">
+      <a href="skate.html" class="categoria-link">Skate</a>
+    </h3>
+    <p class="centrado">Zapatillas para skate,<br> resistentes y con estilo.</p>
+  </div><br>
+  <div class="categoria-item">
+    <a href="urbanas.html">
+      <img src="imagen2.png" alt="Imagen 2" class="img" />
+    </a>
+    <h3 class="centrado">
+      <a href="urbanas.html" class="categoria-link">Urbanas</a>
+    </h3>
+    <p class="centrado">Perfectas para la <br> ciudad y el día a día.</p>
+  </div><br>
+  <div class="categoria-item">
+    <a href="edicion-limitada.html">
+      <img src="imagen3.png" alt="Imagen 3" class="img" />
+    </a>
+    <h3 class="centrado">
+      <a href="edicion-limitada.html" class="categoria-link">Edición limitada</a>
+    </h3>
+    <p class="centrado">Modelos exclusivos <br> y únicos.</p>
+  </div>
+</div>
+  </div>
+
+  
+  <section id="contacto" class="contacto">
+  <h2>Contáctanos</h2>
+  <div class="formulario-contacto">
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <!--Estas son las redes sociales-->
+  <div class="redes">
+    <a href="#">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=100063951309440&locale=es_LA">Facebook</a>
+    <a href="#">TikTok</a>
+  </div>
+</section>
+
+  <!--Este es el login-->
+  <div id="loginModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Iniciar sesión</h2>
+      <input type="text" placeholder="Usuario" />
+      <input type="password" placeholder="Contraseña" />
+      <button>Entrar</button>
+    </div>
+  </div>
+<!-- Este es el contenerdor de compras-->
+  
+    <div id="cartModal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Carrito de compras</h2>
+    <ul id="carrito-lista"></ul>
+    <button onclick="cerrarCarrito()">Cerrar</button>
+  </div>
+</div>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-info">
+    <h3>Risks Shoes</h3>
+    <p>Estilo urbano para cada paso</p>
+  </div>
+
+  <!--Este es el pie de pagina-->
+  <div class="footer-links">
+    <a href="#">Inicio</a>
+    <a href="#">Catálogo</a>
+    <a href="#">Contacto</a>
+    <a href="#">Acerca de</a>
+  </div>
+
+  <div class="footer-copy">
+    <p>&copy; 2025 Risks Shoes. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

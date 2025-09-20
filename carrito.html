@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito de compras - Risks Shoes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.jpg" alt="Logo" width="80" height="80"> Risks Shoes</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="skate.html">Skate</a></li>
+        <li><a href="urbanas.html">Urbanas</a></li>
+        <li><a href="edicion-limitada.html">Edición limitada</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2 class="centrado">Tu carrito de compras</h2>
+    <ul id="carrito-lista-pagina"></ul>
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+  </section>
+
+  <section id="contacto" class="contacto">
+  <h2>Contáctanos</h2>
+  <div class="formulario-contacto">
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <!--Estas son las redes sociales-->
+  <div class="redes">
+    <a href="#">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=100063951309440&locale=es_LA">Facebook</a>
+    <a href="#">TikTok</a>
+  </div>
+</section>
+  <footer class="footer">
+    <div class="footer-copy">
+      <p>&copy; 2025 Risks Shoes. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script>
+  // Mostrar productos del carrito en la página
+  function mostrarCarritoPagina() {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const lista = document.getElementById('carrito-lista-pagina');
+    lista.innerHTML = '';
+    if (carrito.length === 0) {
+      lista.innerHTML = '<li>No hay productos en el carrito.</li>';
+      return;
+    }
+    carrito.forEach(producto => {
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <img src="${producto.img}" alt="${producto.nombre}" style="width:80px;height:80px;object-fit:cover;border-radius:8px;vertical-align:middle;margin-right:10px;">
+        <span>${producto.nombre}</span>
+      `;
+      lista.appendChild(li);
+    });
+  }
+  function vaciarCarrito() {
+    localStorage.removeItem('carrito');
+    mostrarCarritoPagina();
+  }
+  // Mostrar al cargar la página
+  mostrarCarritoPagina();
+</script>
+</body>
+</html>

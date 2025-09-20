@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skate - Risks Shoes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles_categorias.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.jpg" alt="Logo de mi empresa" width="80" height="80"> Risks Shoes</div>
+    <nav>
+     <!--Este es el home --> 
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#">Categorías</a>
+          <ul class="submenu">
+            <li><a href="skate.html">Skate</a></li>
+            <li><a href="urbanas.html">Urbanas</a></li>
+            <li><a href="edicion-limitada.html">Edición limitada</a></li>
+          </ul>
+        </li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="login.html" id="loginBtn">ingresar</a></li>
+        <li><a href="carrito.html" id="cartBtn">🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2 class="centrado">Productos Skate</h2>
+    <div class="productos-lista">
+      <div class="producto-item">
+        <img src="imagen1.png" alt="Skate 1" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="Skate Classic 1" data-id="1" data-img="imagen1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate2.png" alt="Skate 2" class="img" />
+        <h3 class="centrado">Skate Pro</h3>
+        <p class="centrado">Ideal para trucos y saltos urbanos.</p>
+        <button class="agregar-carrito" data-nombre="Skate Classic 2" data-id="2" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate3.png" alt="Skate 3" class="img" />
+        <h3 class="centrado">Skate Street</h3>
+        <p class="centrado">Perfecta para el día a día en la ciudad.</p>
+        <button class="agregar-carrito" data-nombre="Skate Classic 3" data-id="3" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate4.png" alt="Skate 4" class="img" />
+        <h3 class="centrado">Skate Black</h3>
+        <p class="centrado">Estilo negro mate, máxima durabilidad.</p>
+        <button class="agregar-carrito" data-nombre="Skate Classic 4" data-id="4" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate5.png" alt="Skate 5" class="img" />
+        <h3 class="centrado">Skate Red</h3>
+        <p class="centrado">Color vibrante y suela antideslizante.</p>
+        <button class="agregar-carrito" data-nombre="Skate Classic 5" data-id="5" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate6.png" alt="Skate 6" class="img" />
+        <h3 class="centrado">Skate Blue</h3>
+        <p class="centrado">Comodidad y estilo para patinar.</p>
+        <button class="agregar-carrito" data-nombre="Skate Classi 6" data-id="6" data-img="imagen1">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate7.png" alt="Skate 7" class="img" />
+        <h3 class="centrado">Skate Green</h3>
+        <p class="centrado">Material ecológico y resistente.</p>
+        <button class="agregar-carrito" data-nombre="Skate Classic 7" data-id="7" data-img="imagen2">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate8.png" alt="Skate 8" class="img" />
+        <h3 class="centrado">Skate White</h3>
+        <p class="centrado">Diseño minimalista y moderno.</p>
+        <button class="agregar-carrito" data-nombre="Skate Classic 8" data-id="8" data-img="imagen3">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate9.png" alt="Skate 9" class="img" />
+        <h3 class="centrado">Skate Yellow</h3>
+        <p class="centrado">Color amarillo para destacar.</p>
+        <button class="agregar-carrito" data-nombre="Skate Classic 9" data-id="9" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate10.png" alt="Skate 10" class="img" />
+        <h3 class="centrado">Skate Orange</h3>
+        <p class="centrado">Suela reforzada para mayor agarre.</p>
+        <button class="agregar-carrito" data-nombre="Skate Classic 10" data-id="10" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate11.png" alt="Skate 11" class="img" />
+        <h3 class="centrado">Skate Pink</h3>
+        <p class="centrado">Estilo juvenil y divertido.</p>
+        <button class="agregar-carrito" data-nombre="Skate Classic 11" data-id="11" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      
+    </div>
+  </section>
+    <section id="contacto" class="contacto">
+  <h2>Contáctanos</h2>
+  <div class="formulario-contacto">
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <!--Estas son las redes sociales-->
+  <div class="redes">
+    <a href="#">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=100063951309440&locale=es_LA">Facebook</a>
+    <a href="#">TikTok</a>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="footer-copy">
+      <p>&copy; 2025 Risks Shoes. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skate - Risks Shoes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles_categorias.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.jpg" alt="Logo de mi empresa" width="80" height="80"> Risks Shoes</div>
+    <nav>
+     <!--Este es el home --> 
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#">Categorías</a>
+          <ul class="submenu">
+            <li><a href="skate.html">Skate</a></li>
+            <li><a href="urbanas.html">Urbanas</a></li>
+            <li><a href="edicion-limitada.html">Edición limitada</a></li>
+          </ul>
+        </li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="login.html" id="loginBtn">ingresar</a></li>
+        <li><a href="carrito.html" id="cartBtn">🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2 class="centrado">Productos urban</h2>
+    <div class="productos-lista">
+      <div class="producto-item">
+        <img src="skate1.png" alt="Skate 1" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="urban 1" data-id="1" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate1.png" alt="Skate 2" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="urban 2" data-id="2" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate1.png" alt="Skate 3" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="urban 3" data-id="3" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate1.png" alt="Skate 4" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="urban 4" data-id="4" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate1.png" alt="Skate 5" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="urban 5" data-id="5" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate1.png" alt="Skate 6" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="urban 6" data-id="6" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate1.png" alt="Skate 7" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="urban 7" data-id="7" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate1.png" alt="Skate 8" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="urban 8" data-id="8" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate1.png" alt="Skate 9" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="urban 9" data-id="9" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate1.png" alt="Skate 10" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="urban 10" data-id="10" data-img="urban1.png">Agregar al carrito</button>
+      </div>
+      <div class="producto-item">
+        <img src="skate1.png" alt="Skate 11" class="img" />
+        <h3 class="centrado">Skate Classic</h3>
+        <p class="centrado">Diseño clásico y resistente para skate.</p>
+        <button class="agregar-carrito" data-nombre="urban 11" data-id="11" data-img="urban1.png">Agregar al carrito</button>
+      </div> 
+    </div>
+      <section id="contacto" class="contacto">
+  <h2>Contáctanos</h2>
+  <div class="formulario-contacto">
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <!--Estas son las redes sociales-->
+  <div class="redes">
+    <a href="#">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=100063951309440&locale=es_LA">Facebook</a>
+    <a href="#">TikTok</a>
+  </div>
+</section>
+
+  </section>
+  <footer class="footer">
+    <div class="footer-copy">
+      <p>&copy; 2025 Risks Shoes. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

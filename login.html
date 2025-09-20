@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Risks Shoes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.jpg" alt="Logo" width="80" height="80"> Risks Shoes</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="skate.html">Skate</a></li>
+        <li><a href="urbanas.html">Urbanas</a></li>
+        <li><a href="edicion-limitada.html">Edición limitada</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="login.html">registrarse</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="centrado" style="margin-top:40px;">
+    <h2>Iniciar sesión</h2>
+    <form id="loginForm" style="max-width:350px;margin:auto;">
+      <input type="text" placeholder="Usuario" name="usuario" required style="width:100%;margin-bottom:12px;padding:8px;">
+      <input type="password" placeholder="Contraseña" name="password" required style="width:100%;margin-bottom:12px;padding:8px;">
+      <button type="submit" style="width:100%;padding:10px;">Entrar</button>
+    </form>
+    <div id="loginMensaje" style="margin-top:16px;color:#f00;"></div>
+  </section>
+  <footer class="footer">
+    <div class="footer-copy">
+      <p>&copy; 2025 Risks Shoes. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script>
+    // Ejemplo básico de validación
+   // ...dentro de login.html...
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const usuario = this.usuario.value;
+  const password = this.password.value;
+  if(usuario === "jhon" && password === "1234") {
+    document.getElementById('loginMensaje').textContent = "¡Bienvenido!";
+    setTimeout(function() {
+      window.location.href = "index2.html"; // Aquí va la línea de redirección
+    }, 1000);
+  } else {
+    document.getElementById('loginMensaje').textContent = "Usuario o contraseña incorrectos.";
+  }
+});
+  </script>
+</body>
+</html>
